@@ -1,0 +1,63 @@
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #eef2f3, #dbe9f4);
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Page title */
+  h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    color: #2c3e50;
+    letter-spacing: 1px;
+  }
+  
+  /* Flex container for horizontal layout */
+  .gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  /* Each image block */
+  .image-container {
+    background: #ffffff;
+    border: 2px solid #c0d6e4;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 320px;
+  }
+  
+  .image-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image styling with filter effects */
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    filter: grayscale(75%) brightness(1.05) contrast(1.15);
+    transition: filter 0.3s ease;
+  }
+  
+  img:hover {
+    filter: grayscale(0%) brightness(1) contrast(1);
+  }
+  
+  /* License text below each image */
+  .license {
+    font-size: 0.85em;
+    color: #5e6e7e;
+    margin-top: 12px;
+    line-height: 1.4;
+  }
+  
