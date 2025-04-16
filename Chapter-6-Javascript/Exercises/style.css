@@ -1,0 +1,83 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* Centering the calculator */
+  body {
+    background: #f5f7fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Styling the calculator container */
+  .calculator {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Headline */
+  .calculator h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  /* Label and input styles */
+  label {
+    display: block;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+    color: #555;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 0.6rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s;
+  }
+  
+  /* Focus effect on input */
+  input[type="number"]:focus {
+    border-color: #2c97de;
+    outline: none;
+  }
+  
+  /* Button styling */
+  button {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.2rem;
+    background: #2c97de;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  /* Hover effect on button */
+  button:hover {
+    background: #227ab7;
+  }
+  
+  /* Total cost output */
+  #total-cost {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
